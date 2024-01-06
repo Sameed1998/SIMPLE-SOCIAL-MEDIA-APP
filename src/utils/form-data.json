@@ -1,0 +1,13 @@
+[
+  {
+    "type": "email",
+    "label": "Email",
+    "placeholder": "Enter your email"
+  },
+    {
+      "type": "password",
+      "label": "Password",
+      "placeholder": "Enter your password"
+    }
+  ]
+  

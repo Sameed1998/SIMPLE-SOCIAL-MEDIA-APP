@@ -27,7 +27,6 @@ const AddPostScreen = ({ navigation }) => {
     })
       .then((response) => response.json())
       .then((json) => {
-        console.log('New Post Added:', json);
         navigation.navigate(NavigationStrings.HOME_SCREEN, { updatedPost: json });
       })
       .catch((error) => {

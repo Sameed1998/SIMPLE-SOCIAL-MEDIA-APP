@@ -1,4 +1,4 @@
 export default {
     /********************* App Icons **********************/ 
-    ic_logo:require('../assets/Images/gLogo.png'),
+    ic_logo:require('../assets/Images/gridizen_logo.png'),
   };

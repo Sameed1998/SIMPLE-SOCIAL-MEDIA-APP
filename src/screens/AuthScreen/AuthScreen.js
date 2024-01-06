@@ -21,7 +21,7 @@ const AuthScreen = () => {
   const _handleLogin = () => {
     if (validateEmail(formValues?.Email) && validatePassword(formValues?.Password)) {
     dispatch(login(formValues))
-    showToast('Login Successful', 'Welcome!');
+    showToast('Login Successful');
     }
   }
 

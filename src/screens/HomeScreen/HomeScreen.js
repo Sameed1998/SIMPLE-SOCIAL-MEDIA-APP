@@ -15,7 +15,7 @@ const HomeScreen = ({navigation,route}) => {
     const fetchData = async () => {
       try {
         setLoading(true)
-        const response = await fetch(GET_POSTS);
+        const response = await fetch(`${GET_POSTS}?_limit=50`);
         const data = await response.json();
         setPosts(data || []);
       } catch (error) {
@@ -66,7 +66,8 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal:5
+    paddingHorizontal:5,
+    marginBottom:20
   },
   floatingButton:{
     position:'absolute',
@@ -102,6 +103,8 @@ const styles = StyleSheet.create({
   postBody: {
     fontSize: 14,
     fontFamily:FontFamily.regular,
+    color:Colors.gray300
+
   },
   emptyContainer: {
     alignItems: 'center',

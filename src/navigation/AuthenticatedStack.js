@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 import NavigationStrings from "./NavigationStrings";
 import * as Screens from '../screens';
 import FontFamily from "../styles/FontFamily";
@@ -8,8 +7,7 @@ import { logoutUser } from '../redux/reducers/AuthReducer';
 
 
 
-function AuthenticatedStack(Stack) {
-    const dispatch = useDispatch();
+function AuthenticatedStack(Stack,dispatch) {
       return(
               <>
                   <Stack.Screen name={NavigationStrings.HOME_SCREEN} component={Screens.HomeScreen} 
